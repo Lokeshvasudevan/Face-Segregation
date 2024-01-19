@@ -24,7 +24,7 @@ def encode_faces(folder):
 
 # finding the faces and saving in new folder
 def find_target_face():
-    for person in encode_faces('py/people/'):
+    for person in encode_faces('people/'):
         encode_face = person[0]
         filename = person[1]
         is_target_face = fr.compare_faces(encode_face, target_encoding, tolerance=0.550)
